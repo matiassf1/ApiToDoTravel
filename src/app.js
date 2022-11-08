@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 
 // Routes
-import citiesRoutes from "./routes/cities.routes";
+import usersRoutes from "./routes/users.routes";
 
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 // Routes
-app.use("/api/cities", citiesRoutes);
+app.use("/api/users", usersRoutes);
 
 
 
